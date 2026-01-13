@@ -50,7 +50,7 @@ export default function Contact() {
       </div>
 
       <div className="container mx-auto px-4 py-16">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-display font-bold text-slate-900 mb-6">Get in Touch</h2>
           <p className="text-muted-foreground leading-relaxed mb-12">
             We're here to help with all your drying equipment needs. Reach out to us directly and our team will get back to you quickly.
@@ -81,13 +81,13 @@ export default function Contact() {
 
 function InfoCard({ icon, title, content }: { icon: React.ReactNode, title: string, content: string }) {
   return (
-    <div className="flex flex-col items-center p-8 bg-white rounded-lg border border-border/50 shadow-sm min-h-[200px] justify-center text-center">
+    <div className="flex flex-col items-center p-8 bg-white rounded-lg border border-border/50 shadow-sm min-h-[180px] justify-center text-center">
       <div className="mb-4 bg-blue-50 p-4 rounded-full">
         {icon}
       </div>
-      <div className="w-full overflow-hidden">
+      <div className="w-full">
         <h4 className="font-semibold text-slate-900 mb-2 text-lg">{title}</h4>
-        <p className="text-muted-foreground text-sm break-words px-2">{content}</p>
+        <p className="text-muted-foreground text-sm whitespace-nowrap px-2">{content}</p>
       </div>
     </div>
   );
