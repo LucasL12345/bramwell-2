@@ -12,7 +12,6 @@ export function Navbar() {
     { href: "/", label: "Home" },
     { href: "/equipment", label: "Equipment Hire" },
     { href: "/how-it-works", label: "How it Works" },
-    { href: "/faq", label: "FAQ" },
     { href: "/contact", label: "Contact" },
   ];
 

@@ -32,7 +32,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight flex flex-col items-center">
-              <span>Glasgow's Premier</span>
+              <span>Glasgow</span>
               <span className="text-primary-foreground bg-primary px-4 mt-2 inline-block">Dehumidifier Hire</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10">
@@ -144,7 +144,7 @@ export default function Home() {
 
 function FeatureCard({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) {
   return (
-    <Card className="p-8 text-center hover:shadow-lg transition-shadow border-t-4 border-t-transparent hover:border-t-primary">
+    <Card className="p-8 text-center hover:shadow-lg transition-shadow border-4 border-transparent hover:border-primary">
       <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-blue-50 mb-6">
         {icon}
       </div>
