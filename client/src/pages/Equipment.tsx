@@ -77,7 +77,7 @@ export default function EquipmentPage() {
               <div className="col-span-full text-center py-20 bg-white rounded-xl">
                 <p className="text-lg text-muted-foreground">No equipment found matching your criteria.</p>
                 <Button 
-                  variant="link" 
+                  variant="ghost" 
                   onClick={() => { setSearchTerm(""); setCategoryFilter(null); }}
                   className="mt-2"
                 >

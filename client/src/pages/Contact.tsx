@@ -81,13 +81,13 @@ export default function Contact() {
 
 function InfoCard({ icon, title, content }: { icon: React.ReactNode, title: string, content: string }) {
   return (
-    <div className="flex flex-col items-center p-6 bg-white rounded-lg border border-border/50 shadow-sm min-h-[160px] justify-center text-center">
-      <div className="mb-4 bg-blue-50 p-3 rounded-full">
+    <div className="flex flex-col items-center p-8 bg-white rounded-lg border border-border/50 shadow-sm min-h-[200px] justify-center text-center">
+      <div className="mb-4 bg-blue-50 p-4 rounded-full">
         {icon}
       </div>
-      <div>
-        <h4 className="font-semibold text-slate-900 mb-1">{title}</h4>
-        <p className="text-muted-foreground text-sm break-all md:break-normal">{content}</p>
+      <div className="w-full overflow-hidden">
+        <h4 className="font-semibold text-slate-900 mb-2 text-lg">{title}</h4>
+        <p className="text-muted-foreground text-sm break-words px-2">{content}</p>
       </div>
     </div>
   );
