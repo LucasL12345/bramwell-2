@@ -69,17 +69,12 @@ export default function Contact() {
               <InfoCard 
                 icon={<Mail className="w-6 h-6 text-primary" />}
                 title="Email"
-                content="hire@bramwellequipment.co.uk"
-              />
-              <InfoCard 
-                icon={<MapPin className="w-6 h-6 text-primary" />}
-                title="Address"
-                content="123 Industrial Estate Rd, Glasgow"
+                content="enquiries@bramwellequipment.com"
               />
               <InfoCard 
                 icon={<Clock className="w-6 h-6 text-primary" />}
                 title="Hours"
-                content="Mon-Fri: 7:30am - 5:30pm"
+                content="Daily: 9:00am - 9:00pm"
               />
             </div>
 

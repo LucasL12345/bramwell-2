@@ -31,9 +31,9 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
-              Glasgow's Premier <br />
-              <span className="text-primary-foreground bg-primary px-4">Dehumidifier Hire</span>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight flex flex-col items-center">
+              <span>Glasgow's Premier</span>
+              <span className="text-primary-foreground bg-primary px-4 mt-2 inline-block">Dehumidifier Hire</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10">
               Professional drying equipment for homeowners and contractors. 

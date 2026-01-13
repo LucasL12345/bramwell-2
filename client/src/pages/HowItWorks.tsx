@@ -8,12 +8,12 @@ export default function HowItWorks() {
     {
       icon: <MousePointerClick className="w-12 h-12 text-primary" />,
       title: "1. Choose Equipment",
-      description: "Browse our range of industrial dehumidifiers and select the right unit for your needs. Not sure what you need? Give us a call for expert advice."
+      description: "Browse our range of industrial dehumidifiers and select the right unit for your needs."
     },
     {
       icon: <CalendarCheck className="w-12 h-12 text-primary" />,
-      title: "2. Book Online",
-      description: "Submit a quick inquiry or booking request through our website. We'll confirm availability and provide a tailored quote instantly."
+      title: "2. Contact Us for a Quote",
+      description: "Submit a quick inquiry or booking request through our website. We'll confirm availability and provide a tailored quote."
     },
     {
       icon: <Truck className="w-12 h-12 text-primary" />,

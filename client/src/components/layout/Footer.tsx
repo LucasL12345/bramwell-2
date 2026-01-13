@@ -27,7 +27,6 @@ export function Footer() {
               <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
               <li><Link href="/equipment" className="hover:text-white transition-colors">Equipment Hire</Link></li>
               <li><Link href="/how-it-works" className="hover:text-white transition-colors">How it Works</Link></li>
-              <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
             </ul>
           </div>
@@ -50,7 +49,7 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-primary shrink-0" />
-                <span>hire@bramwellequipment.co.uk</span>
+                <span>enquiries@bramwellequipment.com</span>
               </li>
             </ul>
           </div>

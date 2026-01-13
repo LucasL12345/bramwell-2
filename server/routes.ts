@@ -65,7 +65,7 @@ async function seedDatabase() {
         pricePerWeek: 14000,
         category: "Industrial",
         imageUrl: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80",
-        available: true
+        available: false
       },
       {
         name: "Compact Home Dehumidifier",
@@ -74,7 +74,7 @@ async function seedDatabase() {
         pricePerWeek: 10000,
         category: "Domestic",
         imageUrl: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80",
-        available: true
+        available: false
       },
       {
         name: "Turbo Carpet Dryer",
@@ -83,7 +83,7 @@ async function seedDatabase() {
         pricePerWeek: 8000,
         category: "Accessories",
         imageUrl: "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=800&q=80",
-        available: true
+        available: false
       }
     ];
 

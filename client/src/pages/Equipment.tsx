@@ -34,7 +34,7 @@ export default function EquipmentPage() {
       <div className="container mx-auto px-4 -mt-8">
         <div className="bg-white rounded-xl shadow-lg p-6 mb-12">
           <div className="flex flex-col md:flex-row gap-4 items-center">
-            <div className="relative w-full md:w-96">
+            <div className="relative w-full">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground w-4 h-4" />
               <Input 
                 placeholder="Search equipment..." 
@@ -42,25 +42,6 @@ export default function EquipmentPage() {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
-            </div>
-            <div className="flex gap-2 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto">
-              <Button 
-                variant={categoryFilter === null ? "default" : "outline"}
-                onClick={() => setCategoryFilter(null)}
-                className="whitespace-nowrap"
-              >
-                All Categories
-              </Button>
-              {categories.map(cat => (
-                <Button
-                  key={cat}
-                  variant={categoryFilter === cat ? "default" : "outline"}
-                  onClick={() => setCategoryFilter(cat)}
-                  className="whitespace-nowrap capitalize"
-                >
-                  {cat}
-                </Button>
-              ))}
             </div>
           </div>
         </div>
