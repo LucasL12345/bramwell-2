@@ -35,14 +35,6 @@ export function Footer() {
           <div>
             <h3 className="text-white font-display text-lg font-bold mb-4">Contact Us</h3>
             <ul className="space-y-4 text-sm">
-              <li className="flex items-start">
-                <MapPin className="w-5 h-5 mr-3 text-primary shrink-0" />
-                <span>
-                  123 Industrial Estate Road,<br />
-                  Glasgow, G1 1AA,<br />
-                  Scotland
-                </span>
-              </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-primary shrink-0" />
                 <span>0141 555 1234</span>

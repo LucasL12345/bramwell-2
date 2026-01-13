@@ -56,7 +56,7 @@ export default function Contact() {
             We're here to help with all your drying equipment needs. Reach out to us directly and our team will get back to you quickly.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             <InfoCard 
               icon={<Phone className="w-6 h-6 text-primary" />}
               title="Phone"
@@ -73,14 +73,6 @@ export default function Contact() {
               content="Daily: 9:00am - 9:00pm"
             />
           </div>
-
-          <Button 
-            size="lg"
-            className="w-full md:w-auto px-12 py-8 text-xl font-bold shadow-xl"
-            onClick={() => window.location.href = 'mailto:enquiries@bramwellequipment.com'}
-          >
-            Email Us for a Quote
-          </Button>
         </div>
       </div>
     </div>
@@ -89,13 +81,13 @@ export default function Contact() {
 
 function InfoCard({ icon, title, content }: { icon: React.ReactNode, title: string, content: string }) {
   return (
-    <div className="flex items-start p-4 bg-white rounded-lg border border-border/50 shadow-sm">
-      <div className="mr-4 mt-1 bg-blue-50 p-2 rounded-full">
+    <div className="flex flex-col items-center p-6 bg-white rounded-lg border border-border/50 shadow-sm min-h-[160px] justify-center text-center">
+      <div className="mb-4 bg-blue-50 p-3 rounded-full">
         {icon}
       </div>
       <div>
-        <h4 className="font-semibold text-slate-900">{title}</h4>
-        <p className="text-muted-foreground text-sm">{content}</p>
+        <h4 className="font-semibold text-slate-900 mb-1">{title}</h4>
+        <p className="text-muted-foreground text-sm break-all md:break-normal">{content}</p>
       </div>
     </div>
   );
