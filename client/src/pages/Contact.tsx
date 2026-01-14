@@ -1,42 +1,6 @@
-import { useForm } from "react-hook-form";
-import { useCreateInquiry } from "@/hooks/use-inquiries";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
 import { Phone, Mail, Clock } from "lucide-react";
-import { useLocation } from "wouter";
 
 export default function Contact() {
-  const [location] = useLocation();
-  const searchParams = new URLSearchParams(window.location.search);
-  const equipmentName = searchParams.get("equipment");
-
-  const form = useForm({
-    defaultValues: {
-      name: "",
-      email: "",
-      phone: "",
-      message: equipmentName ? `I'm interested in hiring the ${equipmentName}. Please provide a quote.` : "",
-    },
-  });
-
-  const mutation = useCreateInquiry();
-
-  function onSubmit(data: any) {
-    mutation.mutate(data, {
-      onSuccess: () => {
-        form.reset();
-      }
-    });
-  }
 
   return (
     <div className="min-h-screen bg-slate-50">
