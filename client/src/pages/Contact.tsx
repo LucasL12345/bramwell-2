@@ -60,7 +60,7 @@ export default function Contact() {
             <InfoCard 
               icon={<Phone className="w-6 h-6 text-primary" />}
               title="Phone"
-              content="0141 555 1234"
+              content="07738 128756"
             />
             <InfoCard 
               icon={<Mail className="w-6 h-6 text-primary" />}
